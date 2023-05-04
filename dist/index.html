@@ -23,23 +23,23 @@
   <body
     class="flex min-h-screen flex-col items-center justify-center bg-dark-blue"
   >
-    <main class="bg-desaturated-blue mobile:my-16 flex mobile:flex-col gap-y-8 mobile:w-[335px] rounded-t-lg">
-      <div class="relative ">
+    <main class="mobile:my-16 flex laptop:flex-row-reverse mobile:flex-col mobile:rounded-b-lg gap-y-8 mobile:rounded-t-lg laptop:rounded-r-lg laptop:rounded-l-lg bg-desaturated-blue mobile:w-[335px] laptop:w-[1110px]">
+      <div class="relative laptop:w-[50%] laptop:h-[446px]">
         <img
           alt=""
-          class="laptop:hidden rounded-t-lg"
+          class="laptop:hidden laptop:rounded-tl-none rounded-t-lg"
           src="images/image-header-mobile.webp"
         />
         <img
           alt=""
-          class="max-laptop:hidden "
+          class="max-laptop:hidden h-full w-full rounded-r-lg object-cover"
           src="images/image-header-desktop.webp"
         />
-        <div class="absolute top-0 h-full w-full rounded-t-lg opacity-50 bg-soft-violet "></div>
+        <div class="absolute top-0 h-full w-full laptop:rounded-tl-none mobile:rounded-t-lg laptop:rounded-r-lg opacity-40 bg-soft-violet"></div>
       </div>
 
-      <div class="flex flex-col items-center gap-y-5 mobile:px-5 mobile:py-5">
-        <h1 class="text-2xl font-bold text-white">
+      <div class="flex flex-col items-center laptop:justify-around gap-y-5 mobile:px-5 mobile:py-5 laptop:w-[50%]">
+        <h1 class="text-2xl laptop:text-5xl font-bold text-white">
           Get <span class="text-soft-violet">insights</span> that help your
           business grow.
         </h1>
@@ -48,19 +48,19 @@
           regarding revenue, customer experience, and overall efficiency.
         </p>
 
-        <div class="flex flex-col gap-y-5">
+        <div class="flex laptop:w-full laptop:flex-row mobile:flex-col laptop:justify-between laptop:gap-x-5 mobile:gap-y-5">
           <div class="flex flex-col items-center">
-            <span class="text-xl font-bold text-white">10k+</span>
+            <span class="text-xl laptop:text-2xl font-bold text-white">10k+</span>
             <span class="text-sm uppercase text-transparent-white-para font-lexend-deca">companies</span>
           </div>
 
           <div class="flex flex-col items-center">
-            <span class="text-xl font-bold text-white">314</span>
+            <span class="text-xl laptop:text-2xl font-bold text-white">314</span>
             <span class="text-sm uppercase text-transparent-white-para font-lexend-deca">templates</span>
           </div>
 
           <div class="flex flex-col items-center">
-            <span class="text-xl font-bold text-white">12m+</span>
+            <span class="text-xl laptop:text-2xl font-bold text-white">12m+</span>
             <span class="text-sm uppercase text-transparent-white-para font-lexend-deca">queries</span>
           </div>
         </div>
