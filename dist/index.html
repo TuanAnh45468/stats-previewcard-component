@@ -1,26 +1,70 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta content="width=device-width, initial-scale=1.0" name="viewport"> <!-- displays site properly based on user's device -->
+  <head>
+    <meta charset="UTF-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <!-- displays site properly based on user's device -->
 
-  <link href="images/favicon-32x32.png" rel="icon" sizes="32x32" type="image/png">
-  <link href="https://fonts.googleapis.com" rel="preconnect">
-  <link crossorigin href="https://fonts.gstatic.com" rel="preconnect">
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=Lexend+Deca&display=swap" rel="stylesheet">
-  <link href="output.css" rel="stylesheet">
-  <title>Frontend Mentor | Stats preview card component</title>
+    <link
+      href="images/favicon-32x32.png"
+      rel="icon"
+      sizes="32x32"
+      type="image/png"
+    />
+    <link href="https://fonts.googleapis.com" rel="preconnect" />
+    <link crossorigin href="https://fonts.gstatic.com" rel="preconnect" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=Lexend+Deca&display=swap"
+      rel="stylesheet"
+    />
+    <link href="output.css" rel="stylesheet" />
+    <title>Frontend Mentor | Stats preview card component</title>
+  </head>
+  <body
+    class="flex min-h-screen flex-col items-center justify-center bg-dark-blue"
+  >
+    <main class="bg-desaturated-blue mobile:my-16 flex mobile:flex-col gap-y-8 mobile:w-[335px] rounded-t-lg">
+      <div class="relative ">
+        <img
+          alt=""
+          class="laptop:hidden rounded-t-lg"
+          src="images/image-header-mobile.webp"
+        />
+        <img
+          alt=""
+          class="max-laptop:hidden "
+          src="images/image-header-desktop.webp"
+        />
+        <div class="absolute top-0 h-full w-full rounded-t-lg opacity-50 bg-soft-violet "></div>
+      </div>
 
-</head>
-<body>
-  Get insights that help your business grow.
+      <div class="flex flex-col items-center gap-y-5 mobile:px-5 mobile:py-5">
+        <h1 class="text-2xl font-bold text-white">
+          Get <span class="text-soft-violet">insights</span> that help your
+          business grow.
+        </h1>
+        <p class="text-center text-transparent-white-para">
+          Discover the benefits of data analytics and make better decisions
+          regarding revenue, customer experience, and overall efficiency.
+        </p>
 
-  Discover the benefits of data analytics and make better decisions regarding revenue, customer 
-  experience, and overall efficiency.
+        <div class="flex flex-col gap-y-5">
+          <div class="flex flex-col items-center">
+            <span class="text-xl font-bold text-white">10k+</span>
+            <span class="text-sm uppercase text-transparent-white-para font-lexend-deca">companies</span>
+          </div>
 
-  10k+ companies
-  314 templates
-  12m+ queries
+          <div class="flex flex-col items-center">
+            <span class="text-xl font-bold text-white">314</span>
+            <span class="text-sm uppercase text-transparent-white-para font-lexend-deca">templates</span>
+          </div>
 
-</body>
+          <div class="flex flex-col items-center">
+            <span class="text-xl font-bold text-white">12m+</span>
+            <span class="text-sm uppercase text-transparent-white-para font-lexend-deca">queries</span>
+          </div>
+        </div>
+      </div>
+    </main>
+  </body>
 </html>
